@@ -1,0 +1,16 @@
+<form [formGroup]="taskForm">
+  <input
+    type="text"
+    [(ngModel)]="taskTitle"
+    name="taskTitle"
+    placeholder="Enter a new task"
+    required
+  />
+  <input
+    type="date"
+    formControlName="dueDate"
+    name="dueDate"
+    required
+  />
+  <button type="submit">Add Task</button>
+</form>
